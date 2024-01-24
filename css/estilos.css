@@ -1,0 +1,468 @@
+/*DOCUMENTO CSS*/
+/*Aquí le aplico la letra a toda la página*/
+.body1{
+    font-family: sans-serif;
+    height: 100%;
+    margin-left: 12%;
+    margin-right: 15%;
+}
+
+/*Aquí le aplico la propiedad flex y flex-direction row para que se coloquen paralelos los div que contenga el header
+y además le doy margen a lso lados y margen arriba*/
+.header1{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1%;
+    font-size: 1.5em;
+}
+
+/*Aquí le pongo la propiedad border radius a la imagen para que tenga bordes redondeados*/
+.design{
+    border-radius: 10%;
+}
+
+/*Le doy un tamaño al nav con el width y un padding para centrar el texto*/
+nav{
+    width: 30%;
+    padding-top: 2%;
+}
+
+/*Le quito la numeración a la lista ordenada con el lsit-style-type: none 
+y le quito el margen interior con el padding*/
+ol{
+    list-style-type: none;
+    padding-left: 0%;
+}
+
+/*Aquí le doy un pequeño margen entre los li para que no se vean tan pegados*/
+li{
+    margin: 2%;
+}
+
+
+/*Aquí le quito el formato de enlace a la primera etiqueta <a> y además le añado la letra negrita*/
+.agency{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+/*Aquí le quito el formato de enlace a el resto de elementos de la lista y les doy color*/
+.list{
+    text-decoration: none;
+    color: black;
+
+}
+/*Le doy tamaño al documento completo para que haya scroll en la página*/
+html{
+    height: 110%;
+}
+
+/*Le doy tamaño al section, le aplico el grid para posicionar luego las imágenes, le aplico el grid-template-columns y grid-template-rows con fraciones para indicar
+lo que va a ocupar cada bloque, con el gap pogno el espacion entre bloques, con el grid-template-areas indico donde se va a posicionar cada bloque
+y le doy un margen con respecto al footer*/
+.section1{
+    height: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap:5px;
+    grid-template-areas: 
+    "primera segunda tercera"
+    "cuarta quinta tercera"
+    "sexta sexta sexta";
+    margin-top: 5%;
+}
+
+/*Le aplico el color que va a tener el texto de ese div, le pongo flex para alinearlo y con 
+el padding lo ajusto donde quiero. También le pongo un background con una imagen para que la imagen se ajuste al div
+y utilizo cover para que ocupe todo el contenedor*/
+.cont1{
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 8%;
+    padding-bottom: 8%;
+    grid-area: primera;
+    background: url(../img/portfolio-1.jpg) center;
+    background-size: cover;
+}
+
+
+/*Le aplico el color que va a tener el texto de ese div, le pongo flex para alinearlo y con 
+el padding lo ajusto donde quiero. También le pongo un background con una imagen para que la imagen se ajuste al div
+y utilizo cover para que ocupe todo el contenedor*/
+.cont2{
+    grid-area: segunda;
+    background: url(../img/portfolio-2.jpg) center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 8%;
+    padding-bottom: 8%;
+}
+
+/*Le aplico el color que va a tener el texto de ese div, le pongo flex para alinearlo y con 
+el padding lo ajusto donde quiero. También le pongo un background con una imagen para que la imagen se ajuste al div
+y utilizo cover para que ocupe todo el contenedor*/
+.cont3{
+    grid-area: tercera;
+    background: url(../img/portfolio-3.jpg) center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 8%;
+    padding-bottom: 8%;
+}
+
+/*Le aplico el color que va a tener el texto de ese div, le pongo flex para alinearlo y con 
+el padding lo ajusto donde quiero. También le pongo un background con una imagen para que la imagen se ajuste al div
+y utilizo cover para que ocupe todo el contenedor*/
+.cont4{
+    grid-area: cuarta;
+    background: url(../img/portfolio-4.jpg) center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 8%;
+    padding-bottom: 8%;
+}
+
+/*Le aplico el color que va a tener el texto de ese div, le pongo flex para alinearlo y con 
+el padding lo ajusto donde quiero. También le pongo un background con una imagen para que la imagen se ajuste al div
+y utilizo cover para que ocupe todo el contenedor*/
+.cont5{
+    background: url(../img/portfolio-5.jpg) center;
+    background-size: cover;
+    grid-area: quinta;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 8%;
+    padding-bottom: 8%;
+}
+
+/*Le pongo flex para alinearlo y con el padding lo ajusto donde quiero. También le pongo un background con una imagen para que la imagen se ajuste al div
+y utilizo cover para que ocupe todo el contenedor*/
+.cont6{
+    background: url(../img/portfolio-6.jpg) center;
+    background-size: cover;
+    grid-area: sexta;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 2%;
+    padding-bottom: 2%;
+}
+
+/*Le doy tamaño y color a la letra que hay dentro del div y le quito el formato de enlace*/
+.section1 div a{
+    font-size: 1.5em; 
+    text-decoration: none; 
+    color:white; 
+}
+
+/*Ajusto el footer del index y le añado flex para que se alineen en filas, ya que row está predeterminado*/
+.footer1{
+    text-align: right;
+    margin-top: 5%;
+    display: flex;
+    justify-content: right;
+    margin-bottom: 3%;
+}
+
+/*Le quito pongo el display inline-block para poder ajustar el párrafo dentro del div y le doy formato de negrita*/
+footer p{
+    display: inline-block;
+    font-weight: bold;
+}
+
+/*Le doy margen a las etiquetas <a> para que haya separación entre ellas*/
+footer a{
+    margin-left: 2%;
+}
+
+/*Le quito márgenes a todos los elementos contenidos en el footer ppara que se queden pegados*/
+footer *{
+    margin: auto 0;
+}
+
+/******************************************************/
+/*Pantalla de móvil*/
+@media screen and (max-width:767px){
+    /*Le doy un nuevo formato al header y lo alineo al centro*/
+    .header1{
+        display: flex;
+        justify-content: center;
+    }
+
+    /*Le doy un tamaño al contenedor nav contenido dentro del header y alineo el texto*/
+    .header1 nav{
+        width: 50%;
+        text-align: center;
+    }
+
+    /*Le aplico la propiedad display: none para que en la vista móvil no aparezca la imagen y tampoco ocupe espacio*/
+   .arriba{
+        display: none;
+   }
+   /*Uso display: flex con direction: column para que me coloque los elementos uno encima de otro, y además uso el max-width: 100% para que ocupe todo el ancho de la página*/
+   .section1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        max-width: 100%;
+    }
+
+    /*Le doy a todos los divs que contiene el section1 un tamaño concreto*/
+   .section1 div{
+        height: 200px;
+    }
+
+    /*Al footer le pongo display flex y direction: column para que se coloquen los contenedores que hay dentro de él un encima de otro*/
+    .footer1{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /*Le doy un poco de margen a la etiqueta <p> del footer para que no se quede pegado a las imágenes*/
+    .footer1 p{
+        margin-bottom: 3%;
+    }
+
+
+    /*Le indico al html que se ajuste automáticamente a lo largo y se aplicará a TODAS las páginas del documento*/
+    html{
+        height: auto;
+    }
+
+    
+
+}
+
+
+
+/*******************************************************************/
+/*AQUÍ CREO EL CSS DE LA PÁGINA ABOUT*/
+
+/*Le indico el tipo de letra que aplico a todo el documento, le quito los márgenes y le doy un alto a la página para darle scroll*/
+.body2{
+    font-family: sans-serif;
+    margin: 0%;
+    height: 75%;
+}
+
+/*Aquí le aplico la propiedad flex y flex-direction row para que se coloquen paralelos los div que contenga el header
+y además le doy margen a lso lados y margen arriba*/
+.header2{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1%;
+    padding-left: 15%;
+    font-size: 1.5em;
+}
+
+/*Le indico el color que van a tener los botones de navegación*/
+.ol2 li a{
+    color: black;
+}
+
+/*Le quito el formato de enlace a los botones de navegacion*/
+.list2{
+    text-decoration: none;
+}
+
+/*Le añado el subrayado al título de la página sobre la que nos encontramos*/
+.about{
+    text-decoration: underline;
+}
+
+/*Le quito los márgenes al section para que el color de fondo que le añado ocupe todo el ancho de la página,ajusto la parte de la izquierda con el padding, 
+le digo que se ajuste al ancho de la página con el width: auto y le doy tamaño al height*/
+.section2{
+    margin: 0%;
+    width: auto;
+    padding-left: 15%;
+    background-color: rgb(243, 243, 243);
+    height: 100%;
+}
+
+/*Le quito intensidad a la negrita del h1 y le doy tamaño a la letra*/
+h1{
+    font-weight: lighter;
+    font-size: 2em;
+}
+
+/*Ajusto el texto con el padding*/
+.contenido{
+    padding-right: 50%;
+    line-height: 160%;
+}
+
+/*Ajusto el footer del about y le añado flex sin nada más para que se alinee en filas, ya que row está predeterminado*/
+.footer2{
+    text-align: right;
+    margin-top: 3%;
+    display: flex;
+    justify-content: right;
+    padding-right: 18%;
+}
+/*******************************************************************/
+/*AQUÍ HAGO EL CSS DE LA PÁGINA OUR WORK*/
+/*Le indico el tipo de letra que aplico a todo el documento y le quito los márgenes*/
+.body3{
+    font-family: sans-serif;
+    margin: 0%;
+}
+
+/*Le doy tamaño al texto del header, le aplico la propiedad flex para que se coloquen paralelos los div que contenga el header
+y además le doy padding en la izq y margen arriba*/
+.header3{
+    display: flex;
+    margin-top: 1%;
+    padding-left: 15%;
+    font-size: 1.5em;
+}
+
+/*Le quito el formato de letra a los elementos con clase li3 y le pongo color negro al texto*/
+.li3{
+    color: black;
+    text-decoration: none;
+}
+
+/*Le pongo subrayado y color negro al boton de DESIGN*/
+.ourwork{
+    text-decoration: underline;
+    color: black;
+}
+
+/*Le quito los márgenes al section para que el color de fondo que le añado ocupe todo el ancho de la página,ajusto la parte de la izquierda con el padding*/
+.section3{
+    background-color: rgb(243, 243, 243);
+    padding-left: 15%;
+    padding-right: 15%;
+    margin: 0%;
+}
+
+/*Ajusto el h1*/
+h1{
+    padding-top: 8%;
+    margin-bottom: 5%;
+}
+
+/*Le doy tamaño al section, le aplico el grid para posicionar luego las imágenes, le aplico el grid-template-columns y grid-template-rows con fraciones para indicar
+lo que va a ocupar cada bloque, con el gap pogno el espacion entre bloques, con el row-gap doy espacio entre las filas de la cuadrícula, 
+con el grid-template-areas indico donde se va a posicionar cada bloque y le doy un margen con respecto al footer*/
+.grande{
+    width: 100%;
+    display: grid;
+    gap: 8px;
+    row-gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+/*A todos los div que hay contenidos dentro de grande les digo que ocupen todo el ancho de su contenedor y les doy height tambien*/
+.grande div{
+    width: 100%;
+}
+
+/*A las imagenes que hay dentro de los div que contiene la clase grande les aplico width:100% para que ocupen todo el ancho de su contenedor
+y además les redondeo los bordes con la propiedad border-radius*/
+.grande div img{
+    width: 100%;
+    border-radius: 7%;
+}
+
+/*Ajusto el footer del our work y le añado flex sin nada más para que se alinee en filas, ya que row está predeterminado*/
+.footer3{
+    text-align: right;
+    margin-top: 3%;
+    display: flex;
+    justify-content: right;
+    padding-right: 15%;
+}
+
+/*********************************************************************************/
+/*CSS DE LA PÁGINA DE CONTACT US*/
+/*Le indico la letra que va a contener la página, le digo que ocupe todo el alto de la página y le quito los márgenes al body*/
+.body4{
+    font-family: sans-serif;
+    margin: 0%;
+    height: 100%;
+}
+
+/*Le doy tamaño al texto del header del contact us, le aplico la propiedad flex para que se coloquen paralelos los div que contenga el header
+y además le doy padding en la izq y margen arriba*/
+.header4{
+    padding-left: 15%;
+    font-size: 1.5em;
+    margin-top: 1%;
+    padding-bottom: 1.7%;
+}
+
+/*Le qañado el subrayado al botón de Contact us ya que es en la página en la que nos encontramos*/
+.contact{
+    text-decoration: underline;
+    color: black;
+}
+
+/*Le doy color al fondo y aplico padding para colocar el formulario*/
+.section4{
+    background-color: rgb(243, 243, 243);
+    padding-left: 15%;
+    padding-bottom: 5%;
+}
+
+/*Le aplico formato y ajusto el h1*/
+.contacto{
+    font-size: 2em;
+    display: inline-block;
+    margin-bottom: 4%;
+    padding-top: 6%;
+}
+
+/*A los label les aplico un tamaño de letra mayor del predeterminado*/
+label{
+    font-size: 1.2em;
+}
+
+/*A los input les doy margen para que se separen de los label y les aplico color a los bordes, además de hacerlos redondeados*/
+input{
+    margin-top: 1%;
+    margin-bottom: 2%;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 5px;
+}
+
+/*Al textarea le doy margen para que se separe del label y le aplico color a los bordes, además de hacerlos redondeados*/
+textarea{
+    font-weight: bold;
+    margin-top: 1%;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 5px;
+}
+
+/*Al boton de enviar le indico que la letra sea white  y negrita y el color de fondo sea black*/
+.boton{
+    color: white;
+    font-weight: bold;
+    background-color: black;
+}
+
+/*Ajusto el footer del Contact us y le añado flex sin nada más para que se alinee en filas, ya que row está predeterminado*/
+.footer4{
+    text-align: right;
+    margin-top: 2%;
+    display: flex;
+    justify-content: right;
+    margin-bottom: 3%;
+    padding-right: 15%;
+}
+
